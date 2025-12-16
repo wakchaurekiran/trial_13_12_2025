@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .weather-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .weather-info div {
+            margin: 8px 0;
+            font-size: 18px;
+        }
+        .error {
+            color: red;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button onclick="getWeather()">Get Weather</button>
+
+        <div class="weather-info" id="weather-info"></div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script>
+        // Replace with your OpenWeatherMap API key
+        const apiKey = "8ab77d733e192e0004a1a4240015d95e";
+
+        function getWeather() {
+            const city = document.getElementById('city').value;
+            const weatherInfoDiv = document.getElementById('weather-info');
+            const errorDiv = document.getElementById('error');
+            
+            // Clear previous data and error messages
+            weatherInfoDiv.innerHTML = '';
+            errorDiv.innerHTML = '';
+
+            // Validate input
+            if (city === '') {
+                errorDiv.innerHTML = 'Please enter a city name.';
+                return;
+            }
+
+            // OpenWeatherMap API URL
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            // Fetch weather data
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.cod === 200) {
+                        const temperature = data.main.temp;
+                        const humidity = data.main.humidity;
+                        const pressure = data.main.pressure;
+                        const windSpeed = data.wind.speed;
+                        const description = data.weather[0].description;
+                        const cityName = data.name;
+                        const country = data.sys.country;
+
+                        // Display weather data
+                        weatherInfoDiv.innerHTML = `
+                            <h2>${cityName}, ${country}</h2>
+                            <div><strong>Temperature:</strong> ${temperature}°C</div>
+                            <div><strong>Humidity:</strong> ${humidity}%</div>
+                            <div><strong>Pressure:</strong> ${pressure} hPa</div>
+                            <div><strong>Weather:</strong> ${description}</div>
+                            <div><strong>Wind Speed:</strong> ${windSpeed} m/s</div>
+                        `;
+                    } else {
+                        errorDiv.innerHTML = 'City not found. Please check the name and try again.';
+                    }
+                })
+                .catch(error => {
+                    errorDiv.innerHTML = 'Error fetching data. Please try again later.';
+                });
+        }
+    </script>
+
+</body>
+</html>

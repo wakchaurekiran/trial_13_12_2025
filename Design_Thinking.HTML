@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Thinking Course</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            position: relative;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .module {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .module h2 {
+            margin-top: 0;
+        }
+
+        .video, .quiz, .discussion-forum {
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .syllabus ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .instructor, .grading {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faculty {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .faculty img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .faculty-info {
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Design Thinking Course</h1>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <div class="dropdown">
+            <a href="#">Design Thinking</a>
+            <div class="dropdown-content">
+                <a href="#empathy">Empathy</a>
+                <a href="#define">Define</a>
+                <a href="#ideate">Ideate</a>
+                <a href="#prototype">Prototype</a>
+                <a href="#test">Test</a>
+            </div>
+        </div>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#instructor">Instructor</a>
+        <a href="#grading">Grading</a>
+        <a href="#grading">Students</a>
+    </nav>
+
+    <div class="container">
+        <!-- Introduction Section -->
+        <div class="module" id="introduction">
+            <h2>Introduction to Design Thinking</h2>
+            <div class="video">
+                <p>Watch this introductory video:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_r0VX-aU_T8?si=bPPPGyZBzz-36xGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!--img src="DT_1.png" style="width:1000px;height:auto;"-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IefL8Fe2054?si=lL-ubtvdiG5_zdBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h4>Course Objectives</h4>
+                    <ul>		
+                        <li>	1.Introduce students to the principles of Design Thinking and the importance of challenging existing patterns for innovative problem-solving.	</li>
+                        <li>	2. Foster teamwork, positive thinking, and self-reflection through interactive and creative activities.	</li>
+                        <li>	3. Develop students' ability to visualize long-term goals, create user personas, and map user journeys for better understanding of user needs.	</li>
+                        <li>	4. Equip students with practical skills in ideation methods, mobile application design, and patent application processes.	</li>
+                    </ul>	
+                    <h4>Course Outcomes</h4>
+                    <ul>		
+                        <li>	CO1:  Demonstrate an understanding of Design Thinking principles and the ability to identify and break existing patterns to develop innovative solutions.	</li>
+                        <li>	CO2:  Exhibit improved teamwork, positivity, and self-awareness through participation in various activities designed to enhance these skills.	</li>
+                        <li>	CO3:  Create detailed user personas, empathy maps, and journey maps to inform design decisions and improve user experiences.	</li>
+                        <li>	CO4:  Apply ideation techniques, design mobile applications using MIT App Inventor, and understand the process of designing and applying for patents.	</li>
+                        <li>	CO5:  Propose prototype solutions using appropriate tools.	</li>
+                        </ul>		
+                        
+                        <h4>Reference books</h4>
+                        <ul>		
+                            <li>	[T1].Brown, Tim, "Change by Design: How Design Thinking Creates New Alternatives for Business and Society," 1st edition, Harper Business.	</li>
+                            <li>	[T2].Liedtka, Jeanne, and Tim Ogilvie, "Designing for Growth: A Design Thinking Tool Kit for Managers," 1st edition, Columbia Business School Publishing.	</li>
+                            <li>	[T3].Kelley, Tom, and David Kelley, "Creative Confidence: Unleashing the Creative Potential Within Us All," 1st edition, Crown Business.	</li>
+                        
+                            <li>	[R1]. Martin, Roger L., "The Design of Business: Why Design Thinking is the Next Competitive Advantage," 1st edition, Harvard Business Review Press.	</li>
+                            </ul>	
+                            <img src="DT_1.png" style="width:1000px;height:auto;">
+                            <img src="design_def.jpg" style="width:1000px;height:auto;">
+                            <img src="design_thinker.jpg" style="width:1000px;height:auto;">
+                            <img src="DT_2.jpg" style="width:1000px;height:auto;">
+                            <img src="DT_1.png" style="width:1000px;height:auto;">	
+                            
+            </div>
+        </div>
+
+        <!-- Syllabus Section -->
+        <div class="module syllabus" id="syllabus">
+            <h2>Course Syllabus</h2>
+            <p>This course covers the following topics in the design thinking process:</p>
+            <ul>
+                <li>Introduction to Design Thinking</li>
+                <li>Empathy and User Research</li>
+                <li>Defining the Problem</li>
+                <li>Ideation Techniques</li>
+                <li>Prototyping Methods</li>
+                <li>Testing and Iteration</li>
+            </ul>
+            <h2>List of Experiments</h2>
+            <ul>		
+                <li>	Introduction of Design thinking and Break the pattern activity. 	</li>
+                <li>	Persona Identification: Creating personas of end-user to help in understanding the needs, goals, and pain points of the users.	</li>
+                <li>	Empathy map: mapping out what users say, think, feel, and do to gain deeper insights into their experiences.	</li>
+                <li>	Affinity mapping: organize and categorize data and insights collected during the empathize stage into meaningful patterns.	</li>
+                <li>	 Pattern and Antipattern Identification: Identifying patterns and antipatterns helps in defining the problem by understanding common challenges and behaviors.	</li>
+                <li>	Theory of Prioritization (Impact of AI)	</li>
+                <li>	Prioritizing problems or features based on their impact, helping to define the key areas to focus on.	</li>
+                <li>	Visualization: Draw a poster to visualize ourselves in the next 4 year. Helps to implement the vision and goals set during the design thinking process.	</li>
+                <li>	Brainstorming: Generating a large number of ideas without judgment or criticism.	</li>
+                <li>	Be Positive (Write 20 Positive words impacting your life)	</li>
+            
+                <li>	Ideation Methods- Mind Map, SCAMPER, SIT: - Using these ideation methods to brainstorm and generate a wide range of ideas.	</li>
+                
+                <li>	Brainstorming and 3 Box Method: - Facilitating brainstorming sessions and using the 3 Box Method to organize and evaluate ideas.	</li>
+              
+                <li>	Design a Mobile Application using MIT App Inventor: - Creating a prototype of a mobile application to test and iterate on the ideas generated.	</li>
+                
+                <li>	Journey Map:- - Mapping out the user’s journey to identify touchpoints and test how the solution fits into the user’s life.	</li>
+               
+                <li>	Design Patent Application:- - Working on a patent application can be seen as creating a prototype for protecting the innovative aspects of the idea.	</li>
+       
+                <li>	Toss the Goal (Balloon Activity): - A fun, engaging activity that can symbolize the launch and implementation phase, encouraging active participation and teamwork.	</li>
+               
+                <li>	Design an Autobiography: - This activity can be used to test how well the designed solution aligns with the user's journey and goals.	</li>
+                </ul>		
+                
+        </div>
+
+        <!-- Instructor Section -->
+        <div class="instructor" id="instructor">
+            <h2>Instructor Information</h2>
+            <div class="faculty">
+                <img src="Kiran.jpg" alt="Instructor Photo">
+                <div class="faculty-info">
+                    <p><strong>Instructor Name:</strong> Dr. Kiran Wakchaure</p>
+                    <p><strong>Email:</strong> deanproject@sanjivani.edu.in</p>
+                    <p>Dr. Kiran Wakchaure has extensive experience in design thinking, product Development, having led multiple successful projects in the academia and won prizes in several competitions. He is passionate about teaching and looks forward to guiding you through this course.</p>
+                </div>
+            </div>
+
+            <h3>Supporting Faculty</h3>
+            <div class="faculty">
+                <img src="faculty1-photo.jpg" alt="Faculty Member 1">
+                <div class="faculty-info">
+                    <p><strong>Faculty Member 1:</strong> Dr. Tanay Ghosh</p>
+                    <p><strong>Email:</strong> tanayghoshset@sanjivani.edu.in</p>
+                    <p>Dr. Tanay Ghosh specializes in user research and has over 10 years of experience working with various design teams to develop user-centered products.</p>
+                </div>
+            </div>
+
+            <div class="faculty">
+                <img src="faculty2-photo.jpg" alt="Faculty Member 2">
+                <div class="faculty-info">
+                    <p><strong>Faculty Member 2:</strong> Miss. Chanda Pathank/p>
+                    <p><strong>Email:</strong> chandapathakset@sanjivani.edu.in</p>
+                    <p>Miss Chanda Pathak  will be assisting with the hands-on aspects of the course.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grading Section -->
+        <div class="grading" id="grading">
+            <h2>Grading Criteria</h2>
+            <p>Your performance in this course will be evaluated based on the following components:</p>
+            <ul>
+                <li><strong>Participation:</strong> 20% (including discussions and interactive sessions)</li>
+                <li><strong>Assignments:</strong> 40% (weekly assignments based on the course modules)</li>
+                <li><strong>Project Work:</strong> 30% (a final project encompassing all stages of design thinking)</li>
+                <li><strong>Final Quiz:</strong> 10% (to assess your understanding of the key concepts)</li>
+            </ul>
+        </div>
+
+        <!-- Empathy Section -->
+        <div class="module" id="empathy">
+            <h2>Empathy</h2>
+            <p>Understanding the user's needs is crucial. Try this interactive scenario:</p>
+            <div class="interactive-scenario">
+                <!-- Placeholder for interactive scenario -->
+
+                <p>[Interactive Scenario Here]</p>
+                <p>Tools: </p>
+                <p>Brainstorming=: drawing.io</p>
+                <p>Mind Mapping</p>
+                <p>Contextual Study </p>
+                <p>Primary Research</p>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Define Section -->
+        <div class="module" id="define">
+            <h2>Define</h2>
+            <p>Let's create a problem statement together:</p>
+            <div class="quiz">
+                <!-- Placeholder for quiz or interactive exercise -->
+                <p>[Interactive Exercise Here]</p>
+            </div>
+        </div>
+
+        <!-- Ideate Section -->
+        <div class="module" id="ideate">
+            <h2>Ideate</h2>
+            <p>Brainstorm ideas with your peers:</p>
+            <div class="discussion-forum">
+                <!-- Placeholder for discussion forum -->
+                <p>[Discussion Forum Here]</p>
+            </div>
+        </div>
+
+        <!-- Prototype Section -->
+        <div class="module" id="prototype">
+            <h2>Prototype</h2>
+            <p>Create a quick prototype using the tools provided:</p>
+            <div class="interactive-prototype">
+                <!-- Placeholder for prototype tool -->
+                <p>[Prototype Tool Here]</p>
+            </div>
+        </div>
+
+        <!-- Test Section -->
+        <div class="module" id="test">
+            <h2>Test</h2>
+            <p>Test your solution with these case studies:</p>
+            <div class="interactive-prototype">
+                <!-- Placeholder for prototype tool -->
+                <p>[Prototype Tool Here]</p>
+            </div>
+        </div>

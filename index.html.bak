@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh Deshmukh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="download.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="user">
+            <img src="YSD Photo.jpg" alt="">
+            <h1 class="name">Dr. Yogesh Deshmukh</h1>
+            <p class="post">Assistant Professor</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">My Notes</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu" class="fas fa-bars"></div>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <h3>HI MYSELF!</h3>
+        <h2>DR. YOGESH DESHMUKH</h2>
+        <h3 class="post">i am <span class="typing-text"></span></h3>
+        <p>Assistant Professor, Department of Information Technology, Sanjivani College of
+            Engineering, Kopargaon.</p>
+        <a class="know" href="#about"><button class="btn">Know Me<i class="fas fa-user"></i></button></a>
+        
+        <div class="share">
+            <!-- <a href="#" class="fab fa-facebook-f"></a> -->
+            <a href="https://www.facebook.com/yogesh.deshmukh.94651" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCnEutuBQ9jroYPXs0mzf1zg" target="_blank" class="fab fa-youtube"></a>
+            <a href="https://www.linkedin.com/feed/?trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558721_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.1007786" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://github.com/Yogeshdesh151" target="_blank" class="fab fa-github"></a>
+            <a href="https://drive.google.com/drive/u/0/folders/1eBS5CY2JHoGE1WR6n-T_Pk9-OzD68VZ4"
+                class="fas fa-download"></a>
+
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h1 class="heading">About Me</h1>
+        <div class="row">
+            <div class="info">
+                <h3 data-aos="slide-right"><span>Name:</span>Dr. Yogesh Sureshrao Deshmukh</h3>
+                <h3 data-aos="slide-left"><span>Qualification:</span>PhD CSE (2002), M.Tech CSE (2013), B.E. IT (2008)</h3>
+                <h3 data-aos="slide-right"><span>Teaching Experience:</span>15 Years</h3>
+                <h3 data-aos="slide-left"><span>Current Organization:</span>Sanjivani College of Engineering, Kopargaon</h3>
+                <h3 data-aos="slide-right"><span>Current Designation:</span>Assistant Professor</h3>
+				<h3 data-aos="slide-right"><span>Programming Skills:</span>C,C++,Core Java, Advanced Java ,PHP, HTML, CSS, Java Script</h3>
+				<h3 data-aos="slide-right"><span>Research Area:</span>Machine Learning and Artificial Intelligence</h3>
+                <a data-aos="flip-right"
+                    href="https://drive.google.com/file/d/1TPLebpzqgtt9q7guYKEMIlvl74tmsez1/view?usp=sharing"
+                    target="_blank"><button class="btn">My Resume <i class="fas fa-download"></i></button></a>
+            </div>
+            <div class="counter">
+                <div class="box" data-aos="slide-right" data-aos-duration="1000">
+                    <span>7</span>
+                    <h3>NPTEL Certifications</h3>
+                </div>
+                <div class="box" data-aos="zoom-in">
+                    <span>10+</span>
+                    <h3>Product Development</h3>
+                </div>
+                <!-- <div class="box" data-aos="slide-left">
+                    <span>4 star</span>
+                    <h3>on Hackerrank</h3>
+                </div>
+                <div class="box" data-aos="slide-right">
+                    <span>2 star</span>
+                    <h3>on Leetcode</h3>
+                </div> -->
+                <div class="box" data-aos="slide-left">
+                    <span>15</span>
+                    <h3>Scopus Publications</h3>
+                </div>
+				<div class="box" data-aos="slide-left">
+                    <span>10</span>
+                    <h3>Guest Lecture Delivered</h3>
+                </div>
+				 <div class="box" data-aos="slide-left">
+                    <span>17</span>
+                    <h3>STTP and Workshop Attended</h3>
+                </div>
+				<div class="box" data-aos="slide-left">
+                    <span>9</span>
+                    <h3>Workshop Conducted</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- education section starts -->
+    <section class="education" id="education">
+        <h1 class="heading">My Education</h1>
+        <div class="box-container">
+            <div class="box" data-aos="slide-right">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2004</span>
+                <h3>Passed 12th</h3>
+                <h4>Marks Obtained: 75%</h4>
+                <h4>Year of Passing:2004</h4>
+                <h4>School: Dynanamata Junior College, Sangamner</h4>
+            </div>
+            <div class="box" data-aos="slide-left">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2004-2008</span>
+                <h3>Degree: BEIT</h3>
+                <h4>Marks Obtained:71%</h4>
+                <h4>Year of Passing:2008</h4>
+                <h4>Pravara Rural Engineering College, Loni, MH</h4>
+            </div>
+            <div class="box" data-aos="slide-right">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2010-2013</span>
+                <h3>Degree: M.Tech</h3>
+                <h4>Marks Obtained:78%</h4>
+                <h4>Year of Passing:2013</h4>
+                <h4>RGPV, Bhopal</h4>
+            </div>
+            <div class="box" data-aos="slide-left">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2018-2022</span>
+                <h3>Degree: PhD (CSE)</h3>
+                <h4>Thesis Title:Mammogram Classification using Machine Learning Algorithm and Swarm Intelligence</h4>
+                <h4>Year of Passing:2022</h4>
+                <h4>MPU, Bhopal</h4>
+            </div>
+        </div>
+    </section>
+    <!-- education section ends -->
+    <!-- skills section strats -->
+    <section class="skills" id="skills">
+        <h1 class="heading">My Skills</h1>
+        <div class="row">
+            <div class="progress">
+                <h3> HTML & CSS <span>100%</span> </h3>
+                <div class="bar html"><span class="anim reveal"></span></div>
+                <h3> C/C++ <span>90%</span> </h3>
+                <div class="bar cpp"><span class="anim reveal"></span></div>
+                <h3> Python <span>80%</span> </h3>
+                <div class="bar python"><span class="anim reveal"></span></div>
+                <h3> SQL <span>100%</span> </h3>
+                <div class="bar sqli"><span class="anim reveal"></span></div>
+                <h3> PHP <span>100%</span> </h3>
+                <div class="bar php"><span class="anim reveal"></span></div>
+            </div>
+            <div class="progress">
+                <h3> Data Structure <span>100%</span> </h3>
+                <div class="bar dsa"><span class="anim reveal"></span></div>
+                <h3> javascript <span>90%</span> </h3>
+                <div class="bar js"><span class="anim reveal"></span></div>
+                <h3> Core Java <span>100%</span> </h3>
+                <div class="bar cjava"><span class="anim reveal"></span></div>
+				 <h3> Advance Java <span>90%</span> </h3>
+                <div class="bar ajava"><span class="anim reveal"></span></div>
+				 <h3> Angular <span>80%</span> </h3>
+                <div class="bar angular"><span class="anim reveal"></span></div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section ends -->
+    <!-- project section starts -->
+    <section class="projects" id="projects">
+        <h1 class="heading">Study Material</h1>
+        <div class="box-container" data-aos="zoom-in-down">
+            <a class="box" href="https://www.youtube.com/channel/UCnEutuBQ9jroYPXs0mzf1zg" target="_blank">
+                <h4>Theory of Computation</h4>
+                
+            </a>
+            <a class="box" href="https://drive.google.com/drive/u/0/folders/19fYfSUPSunWzuSINBJ0LAMIGWM4VPmTk" target="_blank">
+                <h4>Object Oriented Programming with Java</h4>
+                
+            </a>
+            <a class="box" href="https://drive.google.com/drive/u/0/folders/1eBS5CY2JHoGE1WR6n-T_Pk9-OzD68VZ4" target="_blank">
+                <h4>Web Technology</h4>
+               
+            </a>
+            <a class="box" href="https://drive.google.com/drive/u/0/folders/1mz2SwFQiol1Isq9jE2QORGh1FzPjRmJM" target="_blank">
+                <h4>Artificial Intelligence</h4>
+               
+            </a>
+            <a class="box" href="https://www.youtube.com/watch?v=Bj8dFHjxY4k" target="_blank">
+                <h4>Data Structures and Files</h4>
+               
+            </a>
+            <a class="box" href="https://www.youtube.com/watch?v=hfHWMnAY6qE" target="_blank">
+                <h4>Design and Analysis of Algorithm</h4>
+                
+            </a>
+        </div>
+    </section>
+    <!-- my project section ends -->
+    <!-- contacts section starts -->
+    <section class="contacts" id="contacts">
+        <h1 class="heading">Contact Me</h1>
+        <div class="row">
+
+            <div class="content" data-aos="slide-right">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> yogeshdeshmukhit@sanjivani.org.in, yogesh.d151@gmail.com</h3>
+                    <h3><i class="fas fa-phone"></i>+917020572674, +919975616885</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i> Rachana Park, Sai City, Kopargaon-423601 </h3>
+                </div>
+            </div>
+
+            <form method="">
+                <input type="text" placeholder="name" id="sendername" class="box">
+                <input type="email" placeholder="email" id="reply_to" class="box">
+                <input type="phone" placeholder="Phone" id="phone" class="box">
+                <input type="text" placeholder="subject" id="subject" class="box">
+                <textarea id="message" cols="30" rows="8" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn" onclick="sendMail();"> send <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <script>
+                function sendMail() {
+                        (function () {
+                            emailjs.init("dpqz6N77kqk8R0-9h"); // Account Public Key 
+                        })();
+                        var params = {
+                            sendername: document.querySelector("#sendername").value, 
+                            //to: document.querySelector("#to").value,
+                            phone: document.querySelector("#phone").value,
+                            subject: document.querySelector("#subject").value,
+                            replyto: document.querySelector("#reply_to").value,
+                            message: document.querySelector("#message").value,};
+                            var serviceID = "service_zv9t7mi"; // Email Service ID
+                            var templateID = "template_wry0v7l"; // Email Template ID
+                            
+                            emailjs.send(serviceID, templateID, params)
+                                .then(res =>{
+                                    alert("Email Send Successfully !")
+                                })
+                                .catch("Error !");
+                        }
+            </script>
+        </div>
+
+    </section>
+    <!-- contacts section ends -->
+    <a href="#home">
+        <img class="top" src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-22-1024.png" alt="">
+    </a>
+
+    <div class="credits">Copyright<span> Dr. Yogesh Deshmukh</span> | all rights reserved |2024. </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
